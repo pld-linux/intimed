@@ -63,7 +63,9 @@ yararlýdýr.
 %setup -q -c
 
 %build
-%{__make} CFLAGS="%{rpmcflags}" LDFLAGS="-L%{_lib}"
+%{__make} \
+	CFLAGS="%{rpmcflags}" \
+	LDFLAGS="-L%{_lib}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -92,4 +94,4 @@ fi
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_sbindir}/in.timed
-%attr(640,root,root) %config(noreplace) %verify(not mtime md5 size) /etc/sysconfig/rc-inetd/*
+%attr(640,root,root) %config(noreplace) %verify(not md5 mtime size) /etc/sysconfig/rc-inetd/*
