@@ -15,7 +15,7 @@ Source1:	timedt.inetd
 Source2:	timedu.inetd
 Prereq:		rc-inetd
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-Obsolets:	timed
+Obsoletes:	timed
 
 %description
 The intimed package contains a server (in.timed), which keeps
