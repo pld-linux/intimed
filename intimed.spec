@@ -9,8 +9,6 @@ Version:	1.10
 Release:	13
 License:	Freeware
 Group:		Daemons
-Group(de):	Server
-Group(pl):	Serwery
 Source0:	ftp://sunsite.unc.edu/pub/Linux/system/network/sunacm/Other/intimed/%{name}-%{version}.tar.gz
 Source1:	timedt.inetd
 Source2:	timedu.inetd
