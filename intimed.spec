@@ -22,7 +22,7 @@ Install intimed if you need a network time server.
 %setup -q -c
 
 %build
-make CFLAGS="$RPM_OPT_FLAGS"
+%{__make} CFLAGS="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
