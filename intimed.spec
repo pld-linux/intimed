@@ -9,7 +9,7 @@ Source0:	ftp://sunsite.unc.edu/pub/Linux/system/network/sunacm/Other/intimed/int
 Source1:	timedt.inetd
 Source2:	timedu.inetd
 Prereq:		rc-inetd
-BuildRoot:	/tmp/%{named}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The intimed package contains a server (in.timed), which keeps networked
