@@ -1,6 +1,7 @@
 Summary:	A time server for synchronizing networked machines' clocks
 Summary(de):	Zeit-Server zum Synchronisieren von Uhren
 Summary(es):	Time server para sincronización de hora
+Summary(pl):	Serwer czasu do synchronizacji zegarów komputerów w sieci
 Summary(pt):	Time server para sincronização de hora
 Summary(tr):	Saat eþzamanlamasý için time sunucusu
 Name:		intimed
@@ -22,18 +23,22 @@ The intimed package contains a server (in.timed), which keeps
 networked machines' clocks correctly synchronized to the server's
 time.
 
-%description -l es
-intimed es un servidor que irá informar la hora a las máquinas de la
-red. Es útil para mantener las máquinas de la red en sincronía.
-
 %description -l de
 intimed ist ein Server, der an vernetzte Computer die Zeit ausgibt.
 Nützlich zur Synchronisation eines Netzwerks.
+
+%description -l es
+intimed es un servidor que irá informar la hora a las máquinas de la
+red. Es útil para mantener las máquinas de la red en sincronía.
 
 %description -l fr
 intimed est un serveur qui indique aux machines connectées l'heure
 qu'il est. Utile pour synchroniser les réseaux de machines sur l'heure
 correcte.
+
+%description -l pl
+Pakiet intimed zawiera serwer (in.timed), który utrzymuje zegary
+maszyn w sieci zsynchronizowane z czasem serwera.
 
 %description -l pt
 intimed é um servidor que irá informar às máquinas da rede que horas
