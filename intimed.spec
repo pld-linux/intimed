@@ -5,7 +5,7 @@ Summary(pt):	Time server para sincronização de hora
 Summary(tr):	Saat eþzamanlamasý için time sunucusu
 Name:		intimed
 Version:	1.10
-Release:	12
+Release:	13
 License:	Freeware
 Group:		Daemons
 Group(de):	Server
@@ -15,6 +15,7 @@ Source1:	timedt.inetd
 Source2:	timedu.inetd
 Prereq:		rc-inetd
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+Obsolets:	timed
 
 %description
 The intimed package contains a server (in.timed), which keeps
@@ -48,7 +49,7 @@ yararlýdýr.
 %setup -q -c
 
 %build
-%{__make} CFLAGS="%{?debug:-O0 -g}%{!?debug:$RPM_OPT_FLAGS}"
+%{__make} CFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
