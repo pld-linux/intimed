@@ -1,11 +1,11 @@
-Summary: A time server for synchronizing networked machines' clocks.
-Name: intimed
-Version: 1.10
-Release: 9
-Copyright: freeware
-Group: System Environment/Daemons
-Source: ftp://sunsite.unc.edu/pub/Linux/system/network/sunacm/Other/intimed/intimed-1.10.tar.gz
-BuildRoot: /var/tmp/intimed-root
+Summary:	A time server for synchronizing networked machines' clocks.
+Name:		intimed
+Version:	1.10
+Release:	10
+Copyright:	freeware
+Group:		System Environment/Daemons
+Source:		ftp://sunsite.unc.edu/pub/Linux/system/network/sunacm/Other/intimed/intimed-1.10.tar.gz
+BuildRoot:	/tmp/%{named}-%{version}-root
 
 %description
 The intimed package contains a server (in.timed), which keeps networked
@@ -21,13 +21,13 @@ make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-mkdir -p $RPM_BUILD_ROOT/usr/sbin
+install -d $RPM_BUILD_ROOT%{_sbindir}
 
-install -s -m 755 in.timed $RPM_BUILD_ROOT/usr/sbin
+install -s in.timed $RPM_BUILD_ROOT%{_sbindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(-,root,root)
-/usr/sbin/in.timed
+%attr(755,root,root) %{_sbindir}/in.timed
