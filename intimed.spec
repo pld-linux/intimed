@@ -5,15 +5,16 @@ Release:	11
 Copyright:	freeware
 Group:		Daemons
 Group(pl):	Serwery
-Source0:	ftp://sunsite.unc.edu/pub/Linux/system/network/sunacm/Other/intimed/intimed-1.10.tar.gz
+Source0:	ftp://sunsite.unc.edu/pub/Linux/system/network/sunacm/Other/intimed/%{name}-%{version}.tar.gz
 Source1:	timedt.inetd
 Source2:	timedu.inetd
 Prereq:		rc-inetd
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-The intimed package contains a server (in.timed), which keeps networked
-machines' clocks correctly synchronized to the server's time.  
+The intimed package contains a server (in.timed), which keeps
+networked machines' clocks correctly synchronized to the server's
+time.
 
 Install intimed if you need a network time server.
 
