@@ -12,6 +12,7 @@ Release:	14
 License:	Freeware
 Group:		Daemons
 Source0:	ftp://sunsite.unc.edu/pub/Linux/system/network/sunacm/Other/intimed/%{name}-%{version}.tar.gz
+# Source0-md5:	78610c4580f5839640eb22d34f0f3643
 Source1:	timedt.inetd
 Source2:	timedu.inetd
 Prereq:		rc-inetd
