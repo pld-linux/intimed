@@ -1,9 +1,14 @@
-Summary:	A time server for synchronizing networked machines' clocks.
+Summary:	A time server for synchronizing networked machines' clocks
+Summary(de):	Zeit-Server zum Synchronisieren von Uhren
+Summary(es):	Time server para sincronización de hora
+Summary(pt):	Time server para sincronização de hora
+Summary(tr):	Saat eþzamanlamasý için time sunucusu
 Name:		intimed
 Version:	1.10
-Release:	11
-Copyright:	freeware
+Release:	12
+License:	Freeware
 Group:		Daemons
+Group(de):	Server
 Group(pl):	Serwery
 Source0:	ftp://sunsite.unc.edu/pub/Linux/system/network/sunacm/Other/intimed/%{name}-%{version}.tar.gz
 Source1:	timedt.inetd
@@ -16,19 +21,40 @@ The intimed package contains a server (in.timed), which keeps
 networked machines' clocks correctly synchronized to the server's
 time.
 
-Install intimed if you need a network time server.
+%description -l es
+intimed es un servidor que irá informar la hora a las máquinas de la
+red. Es útil para mantener las máquinas de la red en sincronía.
+
+%description -l de
+intimed ist ein Server, der an vernetzte Computer die Zeit ausgibt.
+Nützlich zur Synchronisation eines Netzwerks.
+
+%description -l fr
+intimed est un serveur qui indique aux machines connectées l'heure
+qu'il est. Utile pour synchroniser les réseaux de machines sur l'heure
+correcte.
+
+%description -l pt
+intimed é um servidor que irá informar às máquinas da rede que horas
+ele possui no momento. Ele é útil para manter as máquinas da rede em
+sincronia.
+
+%description -l tr
+intimed, istemci makinalara saatinin kaç olduðunu söyleyen bir
+sunucudur. Bilgisayar aðýndaki makinalarý eþ zamanlý tutmak
+yararlýdýr.
 
 %prep
 %setup -q -c
 
 %build
-%{__make} CFLAGS="$RPM_OPT_FLAGS"
+%{__make} CFLAGS="%{!?debug:$RPM_OPT_FLAGS}%{?debug:-O -g}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_sbindir},/etc/sysconfig/rc-inetd}
 
-install -s in.timed $RPM_BUILD_ROOT%{_sbindir}
+install in.timed $RPM_BUILD_ROOT%{_sbindir}
 
 install %{SOURCE1} $RPM_BUILD_ROOT/etc/sysconfig/rc-inetd/timedt
 install %{SOURCE2} $RPM_BUILD_ROOT/etc/sysconfig/rc-inetd/timedu
