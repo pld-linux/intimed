@@ -3,10 +3,12 @@ Summary(de):	Zeit-Server zum Synchronisieren von Uhren
 Summary(es):	Time server para sincronizaciСn de hora
 Summary(pl):	Serwer czasu do synchronizacji zegarСw komputerСw w sieci
 Summary(pt):	Time server para sincronizaГЦo de hora
+Summary(ru):	Сервер для синхронизации системных часов машин в сети
 Summary(tr):	Saat eЧzamanlamasЩ iГin time sunucusu
+Summary(uk):	Сервер для синхрон╕зац╕╖ системних годинник╕в машин в мереж╕
 Name:		intimed
 Version:	1.10
-Release:	13
+Release:	14
 License:	Freeware
 Group:		Daemons
 Source0:	ftp://sunsite.unc.edu/pub/Linux/system/network/sunacm/Other/intimed/%{name}-%{version}.tar.gz
@@ -43,10 +45,18 @@ intimed И um servidor que irА informar Юs mАquinas da rede que horas
 ele possui no momento. Ele И Зtil para manter as mАquinas da rede em
 sincronia.
 
+%description -l ru
+Пакет intimed содержит сервер, который служит для поддержания сети
+машин в синхронизме с временем сервера.
+
 %description -l tr
 intimed, istemci makinalara saatinin kaГ olduПunu sЖyleyen bir
 sunucudur. Bilgisayar aПЩndaki makinalarЩ eЧ zamanlЩ tutmak
 yararlЩdЩr.
+
+%description -l uk
+Пакет intimed м╕стить сервер, який служить для п╕дтримання мереж╕
+машин в синхрон╕зм╕ с часом сервера.
 
 %prep
 %setup -q -c
