@@ -63,7 +63,7 @@ yararlýdýr.
 %setup -q -c
 
 %build
-%{__make} CFLAGS="%{rpmcflags}"
+%{__make} CFLAGS="%{rpmcflags}" LDFLAGS="-L%{_lib}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
