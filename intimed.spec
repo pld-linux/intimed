@@ -13,11 +13,12 @@ License:	Freeware
 Group:		Daemons
 Source0:	ftp://sunsite.unc.edu/pub/Linux/system/network/sunacm/Other/intimed/%{name}-%{version}.tar.gz
 # Source0-md5:	78610c4580f5839640eb22d34f0f3643
+BuildRequires:	rpmbuild(macros) >= 1.268
 Source1:	timedt.inetd
 Source2:	timedu.inetd
-Prereq:		rc-inetd
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+Requires:	rc-inetd
 Obsoletes:	timed
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The intimed package contains a server (in.timed), which keeps
@@ -80,15 +81,11 @@ install %{SOURCE2} $RPM_BUILD_ROOT/etc/sysconfig/rc-inetd/timedu
 rm -rf $RPM_BUILD_ROOT
 
 %post
-if [ -f /var/lock/subsys/rc-inetd ]; then
-	/etc/rc.d/init.d/rc-inetd reload 1>&2
-else
-	echo "Type \"/etc/rc.d/init.d/rc-inetd start\" to start inet server" 1>&2
-fi
+%service -q rc-inetd reload
 
 %postun
-if [ -f /var/lock/subsys/rc-inetd ]; then
-	/etc/rc.d/init.d/rc-inetd reload
+if [ "$1" = 0 ]; then
+	%service -q rc-inetd reload
 fi
 
 %files
