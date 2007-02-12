@@ -1,11 +1,11 @@
 Summary:	A time server for synchronizing networked machines' clocks
-Summary(de):	Zeit-Server zum Synchronisieren von Uhren
-Summary(es):	Time server para sincronizaciСn de hora
-Summary(pl):	Serwer czasu do synchronizacji zegarСw komputerСw w sieci
-Summary(pt):	Time server para sincronizaГЦo de hora
-Summary(ru):	Сервер для синхронизации системных часов машин в сети
-Summary(tr):	Saat eЧzamanlamasЩ iГin time sunucusu
-Summary(uk):	Сервер для синхрон╕зац╕╖ системних годинник╕в машин в мереж╕
+Summary(de.UTF-8):   Zeit-Server zum Synchronisieren von Uhren
+Summary(es.UTF-8):   Time server para sincronizaciцЁn de hora
+Summary(pl.UTF-8):   Serwer czasu do synchronizacji zegarцЁw komputerцЁw w sieci
+Summary(pt.UTF-8):   Time server para sincronizaц╖цёo de hora
+Summary(ru.UTF-8):   п║п╣я─п╡п╣я─ п╢п╩я▐ я│п╦п╫я┘я─п╬п╫п╦п╥п╟я├п╦п╦ я│п╦я│я┌п╣п╪п╫я▀я┘ я┤п╟я│п╬п╡ п╪п╟я┬п╦п╫ п╡ я│п╣я┌п╦
+Summary(tr.UTF-8):   Saat eе÷zamanlamasд╠ iц╖in time sunucusu
+Summary(uk.UTF-8):   п║п╣я─п╡п╣я─ п╢п╩я▐ я│п╦п╫я┘я─п╬п╫я√п╥п╟я├я√я≈ я│п╦я│я┌п╣п╪п╫п╦я┘ пЁп╬п╢п╦п╫п╫п╦п╨я√п╡ п╪п╟я┬п╦п╫ п╡ п╪п╣я─п╣п╤я√
 Name:		intimed
 Version:	1.10
 Release:	16
@@ -25,40 +25,40 @@ The intimed package contains a server (in.timed), which keeps
 networked machines' clocks correctly synchronized to the server's
 time.
 
-%description -l de
+%description -l de.UTF-8
 intimed ist ein Server, der an vernetzte Computer die Zeit ausgibt.
-NЭtzlich zur Synchronisation eines Netzwerks.
+Nц╪tzlich zur Synchronisation eines Netzwerks.
 
-%description -l es
-intimed es un servidor que irА informar la hora a las mАquinas de la
-red. Es Зtil para mantener las mАquinas de la red en sincronМa.
+%description -l es.UTF-8
+intimed es un servidor que irц║ informar la hora a las mц║quinas de la
+red. Es ц╨til para mantener las mц║quinas de la red en sincronц╜a.
 
-%description -l fr
-intimed est un serveur qui indique aux machines connectИes l'heure
-qu'il est. Utile pour synchroniser les rИseaux de machines sur l'heure
+%description -l fr.UTF-8
+intimed est un serveur qui indique aux machines connectц╘es l'heure
+qu'il est. Utile pour synchroniser les rц╘seaux de machines sur l'heure
 correcte.
 
-%description -l pl
-Pakiet intimed zawiera serwer (in.timed), ktСry utrzymuje zegary
+%description -l pl.UTF-8
+Pakiet intimed zawiera serwer (in.timed), ktцЁry utrzymuje zegary
 maszyn w sieci zsynchronizowane z czasem serwera.
 
-%description -l pt
-intimed И um servidor que irА informar Юs mАquinas da rede que horas
-ele possui no momento. Ele И Зtil para manter as mАquinas da rede em
+%description -l pt.UTF-8
+intimed ц╘ um servidor que irц║ informar ц═s mц║quinas da rede que horas
+ele possui no momento. Ele ц╘ ц╨til para manter as mц║quinas da rede em
 sincronia.
 
-%description -l ru
-Пакет intimed содержит сервер, который служит для поддержания сети
-машин в синхронизме с временем сервера.
+%description -l ru.UTF-8
+п÷п╟п╨п╣я┌ intimed я│п╬п╢п╣я─п╤п╦я┌ я│п╣я─п╡п╣я─, п╨п╬я┌п╬я─я▀п╧ я│п╩я┐п╤п╦я┌ п╢п╩я▐ п©п╬п╢п╢п╣я─п╤п╟п╫п╦я▐ я│п╣я┌п╦
+п╪п╟я┬п╦п╫ п╡ я│п╦п╫я┘я─п╬п╫п╦п╥п╪п╣ я│ п╡я─п╣п╪п╣п╫п╣п╪ я│п╣я─п╡п╣я─п╟.
 
-%description -l tr
-intimed, istemci makinalara saatinin kaГ olduПunu sЖyleyen bir
-sunucudur. Bilgisayar aПЩndaki makinalarЩ eЧ zamanlЩ tutmak
-yararlЩdЩr.
+%description -l tr.UTF-8
+intimed, istemci makinalara saatinin kaц╖ olduд÷unu sц╤yleyen bir
+sunucudur. Bilgisayar aд÷д╠ndaki makinalarд╠ eе÷ zamanlд╠ tutmak
+yararlд╠dд╠r.
 
-%description -l uk
-Пакет intimed м╕стить сервер, який служить для п╕дтримання мереж╕
-машин в синхрон╕зм╕ с часом сервера.
+%description -l uk.UTF-8
+п÷п╟п╨п╣я┌ intimed п╪я√я│я┌п╦я┌я▄ я│п╣я─п╡п╣я─, я▐п╨п╦п╧ я│п╩я┐п╤п╦я┌я▄ п╢п╩я▐ п©я√п╢я┌я─п╦п╪п╟п╫п╫я▐ п╪п╣я─п╣п╤я√
+п╪п╟я┬п╦п╫ п╡ я│п╦п╫я┘я─п╬п╫я√п╥п╪я√ я│ я┤п╟я│п╬п╪ я│п╣я─п╡п╣я─п╟.
 
 %prep
 %setup -q -c
