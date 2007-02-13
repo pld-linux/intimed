@@ -1,11 +1,11 @@
 Summary:	A time server for synchronizing networked machines' clocks
-Summary(de.UTF-8):   Zeit-Server zum Synchronisieren von Uhren
-Summary(es.UTF-8):   Time server para sincronización de hora
-Summary(pl.UTF-8):   Serwer czasu do synchronizacji zegarów komputerów w sieci
-Summary(pt.UTF-8):   Time server para sincronização de hora
-Summary(ru.UTF-8):   Сервер для синхронизации системных часов машин в сети
-Summary(tr.UTF-8):   Saat eşzamanlaması için time sunucusu
-Summary(uk.UTF-8):   Сервер для синхронізації системних годинників машин в мережі
+Summary(de.UTF-8):	Zeit-Server zum Synchronisieren von Uhren
+Summary(es.UTF-8):	Time server para sincronización de hora
+Summary(pl.UTF-8):	Serwer czasu do synchronizacji zegarów komputerów w sieci
+Summary(pt.UTF-8):	Time server para sincronização de hora
+Summary(ru.UTF-8):	Сервер для синхронизации системных часов машин в сети
+Summary(tr.UTF-8):	Saat eşzamanlaması için time sunucusu
+Summary(uk.UTF-8):	Сервер для синхронізації системних годинників машин в мережі
 Name:		intimed
 Version:	1.10
 Release:	16
