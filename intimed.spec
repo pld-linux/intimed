@@ -8,7 +8,7 @@ Summary(tr.UTF-8):	Saat eşzamanlaması için time sunucusu
 Summary(uk.UTF-8):	Сервер для синхронізації системних годинників машин в мережі
 Name:		intimed
 Version:	1.10
-Release:	16
+Release:	17
 License:	Freeware
 Group:		Daemons
 Source0:	ftp://sunsite.unc.edu/pub/Linux/system/network/sunacm/Other/intimed/%{name}-%{version}.tar.gz
